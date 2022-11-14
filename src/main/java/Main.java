@@ -14,7 +14,7 @@ public class Main {
     public static final int PORT = 8989;
 
     public static void main(String[] args) throws Exception {
-        BooleanSearchEngine engine = new BooleanSearchEngine(new File("pcs-final-diplom\\pdfs"));
+        BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
         System.out.println(engine.search("бизнес"));
 
         try (ServerSocket serverSocket = new ServerSocket(PORT);) {
